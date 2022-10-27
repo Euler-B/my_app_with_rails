@@ -1,0 +1,14 @@
+<h1>Hello Rails</h1>
+<p>Esta es mi segunda app con rails, y me muestra lo que quiero 🥳</p>
+<h3>Hola mi nombre es <%= @person_1.name %> y tengo <%= @person_1.age %> 🧑‍💻🏃🏻</h2>
+<h3>El nombre de mi esposa, es <%= @person_2.name %> y tiene <%= @person_2.age %> 🧑‍🍳</h2>
+<h3>El nombre de mi hijo, es <%= @person_3.name %> y tiene <%= @person_3.age %> 🧒🏻</h2>
+
+<h2> Personas que viven en esta casa:</h2>
+<ul>
+    <% @persons.each do |person| %>
+        <li>
+            <%= person.name %>
+        </li>
+    <% end %>
+</ul>
